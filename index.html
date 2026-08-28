@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Maria Papadopoulou, a Computer Science and Data Science and AI graduate."
+    >
+
+    <title>Maria Papadopoulou | Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Maria Papadopoulou</a>
+
+            <button
+                    class="menu-button"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+
+                    <a
+                        href="assets/Maria-Papadopoulou.pdf"
+                        class="nav-download"
+                        download
+                    >
+                        Download CV
+                    </a>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+
+        <section id="home">
+            <div class="hero-content">
+                <p class="hero-intro">Hello, I’m</p>
+
+                <h1>Maria Papadopoulou</h1>
+
+                <h2>
+                    Computer Science and Data Science &amp; AI Graduate
+                </h2>
+
+                <p class="hero-description">
+                    Recent graduate with experience gained through software development and data-focused internships.
+                    Looking to begin a career where technical knowledge can be put into practice while continuing to
+                    learn from an experienced team.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="assets/profile.JPG"
+                    alt="Maria Papadopoulou"
+                >
+            </div>
+        </section>
+
+
+        <!-- About -->
+
+        <section id="about">
+            <h2>About</h2>
+
+            <p>
+                Academic study and internship experience have shown that the most rewarding work begins with
+                understanding a real problem and ends with a solution that people can actually use.
+                At VisionSoft, this meant contributing to client-facing software and an AI document-processing
+                service. University projects provided the opportunity to explore machine learning through
+                medical imaging and football injury prediction. I am now looking forward to
+                starting my graduate career, contributing to meaningful
+                projects and continuing to learn along the way.
+            </p>
+        </section>
+
+
+        <!-- Education -->
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="education-heading">
+                        <div>
+                            <h3>MSc Data Science and AI</h3>
+
+                            <p class="institution">
+                                Newcastle University
+                            </p>
+                        </div>
+
+                        <span class="education-date">2025–2026</span>
+                    </div>
+
+                    <div class="education-project">
+                        <h4>Dissertation</h4>
+
+                        <p>
+                            From Patch Features to Slide Diagnosis: Comparing
+                            Multi-Instance Learning Methods for Cancer
+                            Classification
+                        </p>
+
+                        <p class="project-description">
+                            Compared four multi-instance learning approaches
+                            for cancer classification using CAMELYON16
+                            whole-slide image data. Built and evaluated the
+                            models in PyTorch using five-fold cross-validation,
+                            with the best model achieving 95.5% accuracy.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="education-card">
+                    <div class="education-heading">
+                        <div>
+                            <h3>BSc Computer Science</h3>
+
+                            <p class="institution">
+                                Newcastle University
+                            </p>
+                        </div>
+
+                        <span class="education-date">Graduated 2025</span>
+                    </div>
+
+                    <p class="degree-result">2:1 with Honours</p>
+
+                    <div class="education-project">
+                        <h4>Dissertation</h4>
+
+                        <p>
+                            Predicting Football Injuries Using Machine Learning
+                        </p>
+
+                        <p class="project-description">
+                            Developed and compared machine learning models
+                            using football performance and injury data. The
+                            project included engineered workload features such
+                            as match congestion and recovery time, with XGBoost
+                            achieving 81% accuracy.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects-slider">
+                <button
+                    class="slider-button previous-project"
+                    type="button"
+                    aria-label="Show previous project"
+                >
+                    &#10094;
+                </button>
+
+                <div class="projects-viewport">
+                    <div class="projects-track">
+                        <article class="project-card">
+                            <h3>
+                                Cancer Classification Using Multi-Instance Learning
+                            </h3>
+
+                            <p>
+                                Whole-slide pathology images are too large to process
+                                directly, so each slide was represented by thousands
+                                of pre-extracted patch features. Four multi-instance
+                                learning methods were developed in PyTorch and
+                                evaluated through five-fold cross-validation.
+                                Attention MIL made the fewest classification errors,
+                                achieving 95.5% accuracy.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>PyTorch</span>
+                                <span>Machine Learning</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Football Injury Prediction</h3>
+
+                            <p>
+                                Public injury, appearance, match and player datasets
+                                were combined before features were created to represent
+                                workload and recovery. More than 300 injury labels were
+                                grouped into three broader categories, with the final
+                                XGBoost model achieving 81% accuracy.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>XGBoost</span>
+                                <span>pandas</span>
+                                <span>scikit-learn</span>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Personal Portfolio Website</h3>
+
+                            <p>
+                                Created as a more personal alternative to a traditional
+                                CV, this responsive portfolio was built from scratch
+                                using HTML, CSS and JavaScript. The design adapts to
+                                different screen sizes and brings academic work,
+                                technical skills and internship experience together
+                                in one place.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <button
+                    class="slider-button next-project"
+                    type="button"
+                    aria-label="Show next project"
+                >
+                    &#10095;
+                </button>
+            </div>
+        </section>
+
+        <!-- Experience -->
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-list">
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <a
+                            href="https://www.visionsoft.com.cy/"
+                            class="company-logo-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the VisionSoft website"
+                        >
+                            <img
+                                src="assets/VisionSoft.png"
+                                alt="VisionSoft logo"
+                            >
+                        </a>
+
+                        <div class="experience-title">
+                            <h3>Software Developer Intern</h3>
+
+                            <p class="experience-company">
+                                VisionSoft · Limassol, Cyprus
+                            </p>
+                        </div>
+
+                        <span class="experience-date">
+                            Summers 2023, 2024 &amp; 2025
+                        </span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            Worked with clients to understand their
+                            requirements and helped design, develop, test and
+                            implement software solutions.
+                        </li>
+
+                        <li>
+                            Developed SAP Business One add-ons using C# and
+                            .NET and contributed to cross-platform mobile
+                            applications using .NET MAUI.
+                        </li>
+
+                        <li>
+                            Helped develop a Python-based AI service that
+                            extracted information from invoices and other
+                            documents for use within a client mobile
+                            application.
+                        </li>
+
+                        <li>
+                            Represented VisionSoft at SAP events in Dublin and
+                            Vienna.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <a
+                            href="https://www.nicd.org.uk/"
+                            class="company-logo-link nicd-logo-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the National Innovation Centre for Data website"
+                        >
+                            <img
+                                src="assets/NICD.png"
+                                alt="National Innovation Centre for Data logo"
+                            >
+                        </a>
+
+                        <div class="experience-title">
+                            <h3>Data Analyst Intern</h3>
+
+                            <p class="experience-company">
+                                National Innovation Centre for Data · Newcastle
+                            </p>
+                        </div>
+
+                        <span class="experience-date">March 2026</span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            Worked as part of a team on a data challenge set by
+                            Accenture, helping clarify the problem and identify
+                            what needed to be investigated.
+                        </li>
+
+                        <li>
+                            Analysed relevant data and presented
+                            recommendations around local graduate engagement
+                            to the Accenture team.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <a
+                            href="https://www.ncl.ac.uk/"
+                            class="company-logo-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the Newcastle University website"
+                        >
+                            <img
+                                src="assets/NU.png"
+                                alt="Newcastle University logo"
+                            >
+                        </a>
+
+                        <div class="experience-title">
+                            <h3>SAgE Faculty Ambassador</h3>
+
+                            <p class="experience-company">
+                                Newcastle University · Newcastle
+                            </p>
+                        </div>
+
+                        <span class="experience-date">2025–2026</span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            Represented Newcastle University at open days,
+                            campus tours and outreach events, speaking with
+                            prospective students about university life and
+                            degree programmes.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+
+        <section id="skills">
+            <h2>Technical skills</h2>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Programming</h3>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C#</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Data &amp; AI</h3>
+
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>scikit-learn</span>
+                        <span>pandas</span>
+                        <span>NumPy</span>
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Software Development</h3>
+
+                    <div class="skill-tags">
+                        <span>.NET</span>
+                        <span>MAUI</span>
+                        <span>Flask</span>
+                        <span>FastAPI</span>
+                        <span>MySQL</span>
+                        <span>SQLite</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Tools &amp; Platforms</h3>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Azure</span>
+                        <span>SAP Business One</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <footer id="contact" class="site-footer">
+            <div class="footer-content">
+                <p>© 2026 Maria Papadopoulou</p>
+
+                <span class="footer-separator" aria-hidden="true">•</span>
+
+                <a
+                    href="https://www.linkedin.com/in/mariapapadopoulou1/"
+                    class="footer-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Maria Papadopoulou's LinkedIn profile"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M4.98 3.5a2.5 2.5 0 1 1 0 5
+                               2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.64h.05
+                               c.53-1 1.82-2.05 3.75-2.05
+                               4.01 0 4.75 2.64 4.75 6.07V21h-4v-5.62
+                               c0-1.34-.03-3.06-1.87-3.06
+                               -1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"
+                        />
+                    </svg>
+
+                    <span>LinkedIn</span>
+                </a>
+
+                <span class="footer-separator" aria-hidden="true">•</span>
+
+                <a
+                    href="mailto:mariapap2004@gmail.com"
+                    class="footer-link"
+                    aria-label="Email Maria Papadopoulou"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M3 5h18a2 2 0 0 1 2 2v10
+                               a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7
+                               a2 2 0 0 1 2-2Zm9 7.1L20.2 7H3.8L12 12.1Zm0 2.3
+                               L3 8.8V17h18V8.8l-9 5.6Z"
+                        />
+                    </svg>
+
+                    <span>Email</span>
+                </a>
+            </div>
+</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
